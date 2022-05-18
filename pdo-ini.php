@@ -11,3 +11,5 @@ define('DBDSN', DBSYTEM . ':dbname=' . DBNAME . ';host:' . DBHOST . ';port=' . D
 
 # Datenbank Klasse
 $pdo = new PDO(DBDSN, DBUSER, DBPASS);
+
+$statement = $pdo->query($sql);
