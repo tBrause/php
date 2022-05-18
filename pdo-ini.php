@@ -13,3 +13,4 @@ define('DBDSN', DBSYTEM . ':dbname=' . DBNAME . ';host:' . DBHOST . ';port=' . D
 $pdo = new PDO(DBDSN, DBUSER, DBPASS);
 
 $statement = $pdo->query($sql);
+$colcount = $statement->columnCount();
